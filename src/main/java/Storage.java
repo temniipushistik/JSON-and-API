@@ -7,6 +7,7 @@ public class Storage {
     private int casesToday;
     private int casesTotal;
 
+
     public int getDeathsToday() {
         return deathsToday;
     }
@@ -55,15 +56,12 @@ public class Storage {
         this.casesTotal = casesTotal;
     }
 
+
     public String getCountry() {
         return country;
     }
 
     public void setCountry(String country) {
-
+        this.country = country;
     }
-
-    ;
-
-
 }

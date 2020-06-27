@@ -1,15 +1,15 @@
 import java.io.IOException;
+import java.security.SecureRandom;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-        String fullAPI;
+
         API api = new API();
-        fullAPI = api.comeback();
-        System.out.println(api.separate(fullAPI, "Australia"));
-
-
-
-
+        Storage storage = new Storage();
+        String fullAPI = api.comeback();
+        api.separate(fullAPI, "Russia");
+        api.directCatch();
+        api.print();
     }
 }
 
